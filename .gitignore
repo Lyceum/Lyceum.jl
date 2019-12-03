@@ -1,0 +1,5 @@
+.DS_Store
+docs/build/
+docs/src/tutorials
+docs/Manifest.toml
+

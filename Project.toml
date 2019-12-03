@@ -1,0 +1,24 @@
+name = "Lyceum"
+uuid = "f25b5985-59c0-418b-a573-42c079f3f644"
+authors = ["Colin Summers", "The Contributors of Lyceum"]
+version = "0.1.0"
+
+[deps]
+LyceumAI = "6917c76a-ac01-4302-a33e-8c456ab70f71"
+LyceumBase = "db31fed1-ca1e-4084-8a49-12fae1996a55"
+LyceumMuJoCo = "48b9757e-04b8-4dbf-b6ed-75c13d9e4026"
+MuJoCo = "93189219-7048-461c-94ec-443a161ed927"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
+Shapes = "175de200-b73b-11e9-28b7-9b5b306cec37"
+UniversalLogger = "5c5e3362-9445-4819-9f95-51c44c51adeb"
+
+[compat]
+julia = "1.3"
+
+[extras]
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
