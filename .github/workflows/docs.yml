@@ -32,5 +32,5 @@ jobs:
         env:
           MUJOCOJL_TEST_KEY: ${{ secrets.MUJOCOJL_TEST_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # For authentication with GitHub Actions token
-          DOCUMENTER_KEY: ${{ secrets.LYCEUMBOT_DEPLOY_KEY}}
+          DOCUMENTER_KEY: ${{ secrets.DOCUMENTER_KEY }}
         run: julia --project=docs/ docs/make.jl
