@@ -194,6 +194,12 @@ git-tree-sha1 = "469de9cb996a9c03f31905619ff3c33e905711f3"
 uuid = "8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615"
 version = "0.9.5"
 
+[[FFMPEG]]
+deps = ["BinaryProvider", "Libdl"]
+git-tree-sha1 = "9143266ba77d3313a4cf61d8333a1970e8c5d8b6"
+uuid = "c87230d0-a227-11e9-1b43-d7ebe4e7570a"
+version = "0.2.4"
+
 [[FFTW]]
 deps = ["AbstractFFTs", "FFTW_jll", "IntelOpenMP_jll", "Libdl", "LinearAlgebra", "MKL_jll", "Reexport"]
 git-tree-sha1 = "109d82fa4b00429f9afcce873e9f746f11f018d3"
@@ -243,6 +249,12 @@ deps = ["Libdl", "Libglvnd_jll", "Pkg", "X11_jll", "Xorg_libXi_jll"]
 git-tree-sha1 = "cbc0778a866389f895e2101bd18ee23bc7b5182f"
 uuid = "bde7f898-03f7-559e-8810-194d950ce600"
 version = "2.1.0+2"
+
+[[GLFW]]
+deps = ["GLFW_jll"]
+git-tree-sha1 = "5f7c6f26314b091efbaa7734a2a903b775461122"
+uuid = "f7f18e0c-5ee9-5ccd-a5bf-e8befd85ed98"
+version = "3.2.1"
 
 [[GLFW_jll]]
 deps = ["Libdl", "Libglvnd_jll", "Pkg", "X11_jll", "Xorg_libXcursor_jll", "Xorg_libXi_jll", "Xorg_libXinerama_jll", "Xorg_libXrandr_jll"]
@@ -390,6 +402,14 @@ repo-url = "https://github.com/Lyceum/LyceumMuJoCo.jl.git"
 uuid = "48b9757e-04b8-4dbf-b6ed-75c13d9e4026"
 version = "0.1.0"
 
+[[LyceumMuJoCoViz]]
+deps = ["BangBang", "FFMPEG", "GLFW", "LyceumBase", "LyceumMuJoCo", "MuJoCo", "Observables", "Printf", "Shapes", "StaticArrays"]
+git-tree-sha1 = "de784316d6b39401832a13e931b47fde45e78605"
+repo-rev = "master"
+repo-url = "https://github.com/Lyceum/LyceumMuJoCoViz.jl.git"
+uuid = "409fd311-7925-44f6-a514-6be572b34fdd"
+version = "0.1.0"
+
 [[MKL_jll]]
 deps = ["Libdl", "Pkg"]
 git-tree-sha1 = "61069ae718b8ab1e325bbfb4e5268902e7ea08e3"
@@ -473,6 +493,12 @@ version = "0.6.2"
 git-tree-sha1 = "928b8ca9b2791081dc71a51c55347c27c618760f"
 uuid = "77ba4419-2d1f-58cd-9bb1-8ffee604a2e3"
 version = "0.3.3"
+
+[[Observables]]
+deps = ["Test"]
+git-tree-sha1 = "dc02cec22747d1d10d9f70d8a1c03432b5bfbcd0"
+uuid = "510215fc-4207-5dde-b226-833fc4488ee2"
+version = "0.2.3"
 
 [[OpenBLAS_jll]]
 deps = ["Libdl", "Pkg"]
