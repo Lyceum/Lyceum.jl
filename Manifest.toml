@@ -380,7 +380,7 @@ uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 
 [[LyceumAI]]
 deps = ["Base64", "Distances", "EllipsisNotation", "FastClosures", "Flux", "Future", "IterativeSolvers", "LearnBase", "LinearAlgebra", "LyceumBase", "LyceumMuJoCo", "MLDataPattern", "MacroTools", "MuJoCo", "MuJoCo_jll", "Parameters", "Random", "Shapes", "StaticArrays", "Statistics", "UniversalLogger", "UnsafeArrays", "Zygote"]
-git-tree-sha1 = "156631a5bdc36e777f381d4116d99ba75bf42fad"
+git-tree-sha1 = "38984b8e577eae87e6b36273546b301dd632673c"
 repo-rev = "master"
 repo-url = "https://github.com/Lyceum/LyceumAI.jl.git"
 uuid = "6917c76a-ac01-4302-a33e-8c456ab70f71"
@@ -388,7 +388,7 @@ version = "0.1.0"
 
 [[LyceumBase]]
 deps = ["Adapt", "BenchmarkTools", "Dates", "Distributions", "ElasticArrays", "EllipsisNotation", "Future", "InteractiveUtils", "JLSO", "LibGit2", "LinearAlgebra", "Logging", "MacroTools", "Parameters", "Pkg", "Random", "Shapes", "StaticArrays", "Statistics", "Test", "UnicodePlots", "UniversalLogger", "UnsafeArrays"]
-git-tree-sha1 = "d73c452ce85273e6797731546ea239f5b4c79db3"
+git-tree-sha1 = "c361e7ad67a398d571962131e9659860ab73a514"
 repo-rev = "master"
 repo-url = "https://github.com/Lyceum/LyceumBase.jl.git"
 uuid = "db31fed1-ca1e-4084-8a49-12fae1996a55"
@@ -906,9 +906,9 @@ version = "1.2.11+7"
 
 [[Zygote]]
 deps = ["DiffRules", "FFTW", "FillArrays", "ForwardDiff", "IRTools", "InteractiveUtils", "LinearAlgebra", "MacroTools", "NNlib", "NaNMath", "Random", "Requires", "SpecialFunctions", "Statistics", "ZygoteRules"]
-git-tree-sha1 = "7e293d7bef87c2cf2847e99ed0da4edadb75fe90"
+git-tree-sha1 = "74382bcc4c1e8075e14554da67d75565f8fb7827"
 uuid = "e88e6eb3-aa80-5325-afca-941959d7151f"
-version = "0.4.4"
+version = "0.4.5"
 
 [[ZygoteRules]]
 deps = ["MacroTools"]
