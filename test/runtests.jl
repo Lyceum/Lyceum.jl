@@ -1,8 +1,8 @@
 using Test, Pkg, Lyceum
 
-function test_package(name::String)
+function test_package(pkg::String)
     try
-        Pkg.test(name)
+        Pkg.test(pkg)
         return true
     catch
         return false
@@ -10,12 +10,7 @@ function test_package(name::String)
 end
 
 @testset "Lyceum.jl" begin
-
-    names = map(m->String(nameof(m)), Lyceum.LYCEUM_PACKAGES)
-    @info names
-
-    @testset "$name" for name in names
-        @info name
-        @test test_package(name)
+    @testset "$name" for pkg in [LYCEUM_PACKAGES..., UNUSED_LYCEUM_PACKAGES...]
+        @test test_package(pkg)
     end
 end
