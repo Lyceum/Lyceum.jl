@@ -10,7 +10,7 @@ function test_package(pkg::String)
 end
 
 @testset "Lyceum.jl" begin
-    @testset "$name" for pkg in [LYCEUM_PACKAGES..., UNUSED_LYCEUM_PACKAGES...]
+    @testset "$pkg" for pkg in [Lyceum.LYCEUM_PACKAGES..., Lyceum.UNUSED_LYCEUM_PACKAGES...]
         @test test_package(pkg)
     end
 end
