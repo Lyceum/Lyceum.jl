@@ -18,6 +18,13 @@ jobs:
         julia-arch:
           - x64
     steps:
+      - name:  Setup virtual display
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt update
+          sudo apt install xorg-dev xvfb
+          sudo Xvfb :99 -screen 0 1024x768x24 &
+        shell: bash
       - uses: actions/checkout@v1.0.0
       - uses: julia-actions/setup-julia@latest
         with:
@@ -32,4 +39,4 @@ jobs:
       - uses: julia-actions/julia-runtest@master
         env:
           MUJOCOJL_TEST_KEY: ${{ secrets.MUJOCOJL_TEST_KEY }}
-
+          DISPLAY: ':99'
