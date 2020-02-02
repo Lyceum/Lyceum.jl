@@ -1,7 +1,7 @@
 name = "Lyceum"
 uuid = "f25b5985-59c0-418b-a573-42c079f3f644"
 authors = ["Colin Summers", "The Contributors of Lyceum"]
-version = "0.3.0"
+version = "0.4.0"
 
 [deps]
 Shapes = "175de200-b73b-11e9-28b7-9b5b306cec37"
