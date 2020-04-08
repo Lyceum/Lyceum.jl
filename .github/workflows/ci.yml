@@ -46,3 +46,4 @@ jobs:
         env:
           MUJOCO_KEY: ${{ secrets.MUJOCO_KEY }}
           DISPLAY: ':99'
+          JULIA_NUM_THREADS: 2
