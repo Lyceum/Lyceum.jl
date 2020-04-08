@@ -8,9 +8,8 @@ using Pkg
 @reexport using LyceumAI
 @reexport using MuJoCo
 @reexport using Shapes
-@reexport using UniversalLogger
 
-export LyceumBase, LyceumMuJoCo, LyceumAI, MuJoCo, Shapes, UniversalLogger
+export LyceumBase, LyceumMuJoCo, LyceumAI, MuJoCo, Shapes
 
 const LYCEUM_PACKAGES = [
     "LyceumBase",
@@ -18,7 +17,6 @@ const LYCEUM_PACKAGES = [
     "LyceumAI",
     "MuJoCo",
     "Shapes",
-    "UniversalLogger",
 ]
 
 # packages which are in the tomls but not aren't loaded (i.e. with using) by default
