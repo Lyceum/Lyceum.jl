@@ -13,13 +13,3 @@ LyceumAI = "6917c76a-ac01-4302-a33e-8c456ab70f71"
 Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
 LyceumMuJoCoViz = "409fd311-7925-44f6-a514-6be572b34fdd"
 UniversalLogger = "5c5e3362-9445-4819-9f95-51c44c51adeb"
-
-[extras]
-Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-
-[compat]
-julia = "1.3"
-
-[targets]
-test = ["Test"]
