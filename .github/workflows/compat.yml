@@ -1,0 +1,23 @@
+name: UpdateCompat
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  repository_dispatch:
+
+jobs:
+  UpdateCompat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add registries
+        run: |
+          julia --color=yes -e 'using Pkg; pkg"registry add https://github.com/JuliaRegistries/General.git"'
+          julia --color=yes -e 'using Pkg; pkg"registry add https://github.com/Lyceum/LyceumRegistry.git"'
+      - name: Install LyceumDevTools.jl
+        run: julia --color=yes -e 'using Pkg; pkg"add LyceumDevTools#master"'
+      - name: Update compat
+        run: julia --color=yes -e 'using LyceumDevTools.Compat; ghactions()'
+        #run: julia --color=yes -e 'using LyceumDevTools.Compat; ghactions(update_from_test=false)'
+        env:
+          COMPAT_USERNAME: lyceumbot
+          COMPAT_TOKEN: ${{ secrets.LYCEUMBOT_PAT }}
