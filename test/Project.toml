@@ -1,10 +1,3 @@
 [deps]
 Lyceum = "f25b5985-59c0-418b-a573-42c079f3f644"
-LyceumAI = "6917c76a-ac01-4302-a33e-8c456ab70f71"
-LyceumBase = "db31fed1-ca1e-4084-8a49-12fae1996a55"
-LyceumMuJoCo = "48b9757e-04b8-4dbf-b6ed-75c13d9e4026"
-LyceumMuJoCoViz = "409fd311-7925-44f6-a514-6be572b34fdd"
-MuJoCo = "93189219-7048-461c-94ec-443a161ed927"
-Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
-Shapes = "175de200-b73b-11e9-28b7-9b5b306cec37"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
